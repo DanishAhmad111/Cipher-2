@@ -21,10 +21,10 @@ export default function AboutPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
-            About Cipher
+            Discover Cipher
           </h1>
           <p className="text-xl text-gray-400">
-            Unfiltered campus conversations.
+            The home of unfiltered campus conversations.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ export default function SettingsPage() {
   return (
     <ComingSoon
       title="Settings"
-      description="Customize your Cipher experience. Manage your privacy and preferences."
+      description="Customize your Cipher experience. Notification and privacy preferences are coming soon."
     />
   );
 }
