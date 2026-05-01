@@ -21,10 +21,10 @@ export default function AboutPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
-            Discover Cipher
+            About Cipher
           </h1>
           <p className="text-xl text-gray-400">
-            The home of unfiltered campus conversations.
+            Unfiltered campus conversations.
           </p>
         </div>
 
@@ -32,12 +32,12 @@ export default function AboutPage() {
         <div className="bg-black/50 backdrop-blur-lg rounded-3xl p-10 border border-gray-800/50 mb-8">
           <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-4">
-            Cipher is a closed social platform designed exclusively for college campuses — 
+            Cipher is a closed social platform designed exclusively for college campuses —
             where ideas, confessions, and conversations flow freely without identity pressure.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed">
-            We believe in creating a space where students can express themselves authentically, 
-            share their thoughts anonymously, and connect with their campus community in a 
+            We believe in creating a space where students can express themselves authentically,
+            share their thoughts anonymously, and connect with their campus community in a
             meaningful way.
           </p>
         </div>
