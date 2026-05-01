@@ -7,13 +7,9 @@ export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Define route categories
-  const isAuthRoute = pathname.startsWith('/signin') || pathname.startsWith('/signup');
-  const isProtectedRoute = pathname.startsWith('/feed') ||
-                          pathname.startsWith('/community') ||
-                          pathname.startsWith('/message') ||
-                          pathname.startsWith('/profile') ||
-                          pathname.startsWith('/upload') || 
-                          pathname.startsWith('/postlikes')
+  const isAuthRoute = ['/signin', '/signup'].some(route => pathname.startsWith(route));
+  const isProtectedRoute = ['/feed', '/community', '/message', '/profile', '/upload', '/postlikes']
+    .some(route => pathname.startsWith(route));
 
   // Check if user is authenticated
   let isAuthenticated = false;
@@ -51,7 +47,7 @@ export const config = {
     '/community/:path*',
     '/message/:path*',
     '/profile/:path*',
-    '/upload/:path*', 
+    '/upload/:path*',
     '/postlikes/:path*'
   ]
 };
